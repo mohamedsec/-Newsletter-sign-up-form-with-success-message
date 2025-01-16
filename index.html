@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>
+      Frontend Mentor | Newsletter sign-up form with success message
+    </title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <script defer src="./script.js"></script>
+  </head>
+  <body>
+    <!-- Sign-up form start -->
+    <main class="container">
+      <article class="form-reg" id="formReg">
+        <section class="banner">
+          <picture>
+            <source
+              srcset="./assets/images/illustration-sign-up-mobile.svg"
+              media="(max-width:600px)"
+              width="100%"
+              class="mobImg"
+            />
+            <source
+              srcset="./assets/images/illustration-sign-up-desktop.svg"
+              media="(min-width:601px)"
+              width="100%"
+              class="DeskImg"
+            />
+            <img
+              src="./assets/images/illustration-sign-up-mobile.svg"
+              alt="banner-form"
+              class="mobImg"
+            />
+          </picture>
+        </section>
+        <section class="content">
+          <header>
+            <h1>Stay updated!</h1>
+            <p>Join 60,000+ product managers receiving monthly updates on:</p>
+          </header>
+          <div class="features">
+            <div class="feature">
+              <i
+                ><img
+                  class="icon-feature"
+                  src="./assets/images/icon-list.svg"
+                  alt="iconMarker"
+              /></i>
+              <p>Product discovery and building what matters</p>
+            </div>
+            <div class="feature">
+              <i
+                ><img
+                  class="icon-feature"
+                  src="./assets/images/icon-list.svg"
+                  alt="iconMarker"
+              /></i>
+              <p>Measuring to ensure updates are a success</p>
+            </div>
+            <div class="feature">
+              <i
+                ><img
+                  class="icon-feature"
+                  src="./assets/images/icon-list.svg"
+                  alt="iconMarker"
+              /></i>
+              <p>And much more!</p>
+            </div>
+          </div>
+          <form id="loginForm">
+            <div class="input-email">
+              <div class="lable-error">
+                <label for="email"> Email address</label>
+                <span class="error-email" id="displayEerror" aria-live="polite"
+                  >Valid email required and should end with (.com)</span
+                >
+              </div>
+              <input
+                type="text"
+                name="email"
+                id="email"
+                placeholder="email@company.com"
+                class=""
+              />
+            </div>
+            <button>Subscribe to monthly newsletter</button>
+          </form>
+        </section>
+      </article>
+      <article class="result-success" id="formSucc">
+        <div class="succes-icon">
+          <img
+            src="./assets/images/icon-success.svg"
+            alt="succes-icon"
+            
+          />
+        </div>
+        <section class="txt">
+          <h1>Thanks for subscribing!</h1>
+          <p>
+            A confirmation email has been sent to <strong>ash@loremcompany.com</strong>. Please
+            open it and click the button inside to confirm your subscription.
+          </p>
+        </section>
+        <button id="dismissBtn">Dismiss message</button>
+      </article>
+    </main>
+
+    <!-- Sign-up form end -->
+
+    <!-- Success message start -->
+
+    <!-- Success message end -->
+  </body>
+</html>
